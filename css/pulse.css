@@ -20,12 +20,50 @@ body
 	font-size: 16px;
 	margin: 0;
 }
+footer
+{
+	background: #434343;
+	color: #A7A7A7;
+	padding: 1em 0;
+	text-align: center;
+	width: 100%;
+}
+footer p
+{
+	margin: 0;
+}
 header
 {
 	background: #434343;
 	color: white;
 	margin: 0;
 	padding: 0.5em;
+}
+header figure, header h1
+{
+	display: inline-block;
+	vertical-align: top;
+}
+header h1
+{
+	font-size: 20px;
+	font-weight: normal;
+	margin: 1em 0 0 1em;
+	width: 60%;
+}
+header #avatar
+{
+	position: absolute;
+	padding: 1em 1em 0 0;
+	right: 0;
+	top: 0;
+}
+header #avatar figcaption
+{
+	background: #22BCE0;
+	float: right;
+	height: 50px;
+	line-height: 50px;
 }
 header #avatar figcaption:after
 {
@@ -36,9 +74,209 @@ header #avatar figcaption:after
 }
 header #avatar img
 {
+	float: left;
 	width: 50px;
+}
+header #home
+{
+	background: #22BCE0;
+	border-radius: 3px;
+	font-size: 0.8rem;
+	position: absolute;
+	right: 85px;
+	top: 65px;
+}
+header #home a
+{
+	color: white;
+	display: block;
+	padding: 0.3em;
+	text-decoration: none;
+}
+header #home a:after
+{
+	content: "\e000";
+	font-family: "icomoon";
+	padding-left: 0.5em;
 }
 header #logo img
 {
 	width: 80px;
+}
+nav
+{
+	background: #878787;
+	font-size: 0.9em;
+}
+nav ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul a
+{
+	color: white;
+	text-decoration: none;
+	display: block;;
+	padding: 0.5em 0;
+}
+nav ul li
+{
+	display: inline-block;
+	margin: 0 1.2em 0 0;
+	vertical-align: top;
+}
+nav #flecha_nav a
+{
+	background: #22BCE0;
+	padding: 0.5em 0;
+	text-decoration: none;
+}
+nav #flecha_nav a:after
+{
+	content: "\e002";
+	font-family: "icomoon";
+	opacity: 0.6;
+}
+nav #publicar_nav
+{
+	background: #DD4F24;
+	float: right;
+	margin-right: 0;
+	padding-right: 1em;
+	position: relative;
+}
+nav #publicar_nav a:after
+{
+	color: rgba(255,255,255,0.5);
+	content: "\e004";
+	font-family: "icomoon";
+	font-size: 1.2rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+nav #publicar_nav a
+{
+	display: inline-block;
+	padding: 0.5em 0.7em;
+}
+#bienvenida
+{
+	display: none;
+}
+#contenido
+{
+	margin: 1em;
+}
+#contenido .post
+{
+	background: white;
+	border-bottom: 3px #22BCE0 solid;
+	margin-bottom: 3em;
+	position: relative;
+	min-height: 128px;
+}
+#contenido .post p
+{
+	color: #7A7A7A;
+	font-size: 0.8em;
+}
+#contenido .post .datos_post
+{
+	text-align: right;
+}
+#contenido .post .datos_post a
+{
+	text-decoration: none;
+}
+#contenido .post .datos_post .categoria_post
+{
+	background: #22BCE0;
+	border-radius: 0.5em;
+	color: white;
+	float: left;
+	padding: 0.2em 0.5em;
+}
+#contenido .post .datos_post .comentarios_post
+{
+	background: #878787;
+	border-radius: 0.5em;
+	color: white;
+	margin: 0 0 0 2em;
+	padding: 0.6em;
+	position: relative;
+}
+#contenido .post .datos_post .comentarios_post:after
+{
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #878787;
+	content: "";
+	left :14px;
+	position: absolute;
+	top:100%;
+}
+#contenido .post .datos_post .guardar_post
+{
+	margin: 0 1em;
+}
+#contenido .post .datos_post .guardar_post:after
+{
+	color: #FD5;
+	content: "\e003";
+	font-family: "icomoon";
+}
+#contenido .post .imagen_post
+{
+	float: left;
+	margin-right: 1em;
+}
+#contenido .post .imagen_post img
+{
+	width: 96px;
+}
+#contenido .post .titulo_post
+{
+	font-size: 0.8em;
+	font-style: italic;
+	padding: 0.5em 0.5em 0;
+}
+#contenido .post .titulo_post a
+{
+	color: #444;
+	text-decoration: none;
+}
+#contenido .post .votacion_post
+{
+	background: white;
+	border-radius: 0 0 0.5em 0.5em;
+	margin: 3px 0 0 0;
+	padding: 0.5em 0;
+	position: absolute;
+	text-align: center;
+	top: 100%;
+	width: 96px;
+}
+#contenido .post .votacion_post a
+{
+	text-decoration: none;
+}
+#contenido .post .votacion_post .Down:after,
+#contenido .post .votacion_post .Up:after
+{
+	font-family: "icomoon";
+	font-size: 1.6em;
+	vertical-align: bottom;
+}
+#contenido .post .votacion_post .Down:after
+{
+	color: red;
+	content: "\e001";
+}
+#contenido .post .votacion_post .Up:after
+{
+	color: green;
+	content: "\e000";
 }
